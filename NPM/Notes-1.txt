@@ -1,0 +1,7 @@
+Instalation :- npm i <name>
+
+Un-Instalation :- npm u <name>
+
+To provide a comprehensive overview of npm (Node Package Manager), here are the key aspects and functionalities of npm:
+What is npm?
+npm is the world's largest software registry, primarily used for managing packages in JavaScript and Node.js projects. It stands for Node Package Manager and is an integral part of the Node.js ecosystem[4][5].

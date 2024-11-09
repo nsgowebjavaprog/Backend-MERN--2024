@@ -1,0 +1,5 @@
+Components of npm
+npm consists of three main components:
+Website: This is where developers can discover packages, set up profiles, and manage other aspects of their npm experience. It allows users to set up organizations to manage access to public or private packages[5].
+Command Line Interface (CLI): This is how most developers interact with npm. The CLI runs from a terminal and allows users to install, manage, and publish packages[5].
+Registry: This is a large public database of JavaScript software and the meta-information surrounding it. It stores packages and their associated metadata[5].

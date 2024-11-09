@@ -1,0 +1,9 @@
+Configuration and Usage
+Installing npm: npm is installed automatically when you download Node.js. It can also be managed using Node Version Manager (nvm) for easier version management[4].
+Configuring npm: Configuration can be done using the .npmrc file, the npm config set command, or the publishConfig in the package.json file. These methods allow for local, global, or package-specific configurations[1].
+Publishing to GitLab Package Registry: To publish packages to a GitLab package registry, you need to configure the registry URL and authenticate using a token. This can be done using an .npmrc file or the npm config set command[1].
+Comparison with Yarn
+Yarn is another popular package manager developed by Facebook to address some of the limitations of early versions of npm. Here are some key differences:
+Dependency Management: Yarn performs security checks in the background and verifies packages using checksums, while npm uses SHA-512 stored in the package-lock.json file[3].
+Performance: Yarn is often faster than npm, especially in parallel installations. However, npm has improved significantly in recent versions[3].
+Popularity: npm is the default package manager for Node.js and is more widely used due to its long-standing presence and integration with Node.js[3].
