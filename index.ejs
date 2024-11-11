@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+    <title>Index Page</title>
+</head>
+<body class="container">
+    <header>
+        <%- include('../partials/header'); %>
+    </header>
+    <main>
+        <div class="jumbotron">
+            <h1>Welcome to Templating with EJS</h1>
+            <p>This is a sample index page using EJS templating.</p>
+            <h2>Variables and Loops</h2>
+            <p><%= tagline %></p>
+
+            <!-- Displaying a list of mascots -->
+            <h2>Mascots List</h2>
+            <ul>
+                <% mascots.forEach(function(mascot) { %>
+                    <li>
+                        <strong>Name:</strong> <%= mascot.name %>
+                        <br>
+                        <strong>Organization:</strong> <%= mascot.organization %>
+                        <br>
+                        <strong>Birth Year:</strong> <%= mascot.birth_year %>
+                    </li>
+                <% }); %>
+            </ul>
+
+            <!-- Including another EJS file -->
+            <%- include('partials/sidebar'); %>
+
+            <!-- Conditional statement -->
+            <% if (user) { %>
+                <h2>User Information</h2>
+                <p>Name: <%= user.name %></p>
+                <p>Email: <%= user.email %></p>
+            <% } else { %>
+                <p>No user logged in.</p>
+            <% } %>
+
+            <!-- Looping through an array of items -->
+            <h2>Items List</h2>
+            <ul>
+                <% items.forEach(function(item) { %>
+                    <li><%= item %></li>
+                <% }); %>
+            </ul>
+
+            <!-- Displaying raw HTML content -->
+            <% var rawHtml = '<p>This is raw HTML content.</p>'; %>
+            <%- rawHtml %>
+
+            <!-- Handling line breaks in a string -->
+            <% var multilineText = 'Line 1\nLine 2\nLine 3'; %>
+            <%- multilineText.replace(/\n/g, '<br>') %>
+
+            <!-- More content for demonstration -->
+            <h2>More Content</h2>
+            <p>This is additional content to fill up the page.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        </div>
+    </main>
+    <footer>
+        <%- include('../partials/footer'); %>
+    </footer>
+</body>
+</html>
