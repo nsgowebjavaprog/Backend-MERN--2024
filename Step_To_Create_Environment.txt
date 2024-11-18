@@ -1,0 +1,28 @@
+|-----------------------------------------------------------------------|
+|   *******                                                 *******     |
+|                             Mini-Project                              |
+|   *******                                                 *******     |
+|-----------------------------------------------------------------------|
+|   Step-1: create a ``app.js`` file.                                   |
+|                                                                       |
+|   Step-2: npm init -y                                                 |
+|                                                                       |
+|   Step-3: Change `index.js` to `app.js inside the [package.json].     |
+|                                                                       |
+|   Step-4: npm i express                                               |
+|                                                                       |
+|   Step-5: npm i mongoose                                              |
+|                                                                       |
+|   Step-6: npm i bcrypt jsonwebtoken cookie-parser                     |
+|                                                                       |
+|   Step-7: cleaR                                                       |   
+|                                                                       |
+|   Step-8: create ``models`` ---> user.js                              |
+|                                                                       |
+|   Step-9: create ``views`` ---> index.ejs                             |
+|                                                                       |
+|   Step-10: npm i ejs                                                  |
+|                                                                       |
+|   Step-11: Write `app.js` file and run ---> npx nodemon app.js        |
+|                                                                       |
+|   Step-12: 

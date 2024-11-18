@@ -1,0 +1,5 @@
+1. Login and Register
+2. Post Creation
+3. Post Like
+4. Post Delete
+5. Logout
