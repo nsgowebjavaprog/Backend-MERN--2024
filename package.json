@@ -1,5 +1,5 @@
 {
-  "name": "mini-project",
+  "name": "scatch_e-commerce-2024",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
@@ -11,9 +11,13 @@
   "description": "",
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "config": "^3.3.12",
     "cookie-parser": "^1.4.7",
+    "debug": "^4.3.7",
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.8.1"
+    "mongoose": "^8.8.2",
+    "multer": "^1.4.5-lts.1"
   }
 }
